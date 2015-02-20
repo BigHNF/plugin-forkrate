@@ -1,5 +1,5 @@
-Boundary Forking Rate Plugin
-----------------------------
+# Boundary Forking Rate Plugin
+
 Tracks the fork rate on your server by polling `/proc/stat`. On a busy production box you can expect a rate of somewhere between 1-10/sec, if there is a rate approaching 100/sec then your server is experiencing issues.
 
 ## Prerequisites
@@ -8,10 +8,10 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |   v   |         |         |      |
 
-- **OS**: Tested to work on **Debian-based Linux distributions** (although any Linux OS should work)
-- Requires access to /proc/stat
+- **OS**: Tested to work on **Debian-based Linux distributions** (although any Linux OS should work).
+- Requires access to "/proc/stat".
 
-#### **Meter V4.0 or greater**
+### **Meter V4.0 or greater**
 
 To get the new meter:
 
@@ -26,7 +26,7 @@ To get the new meter:
 |:---------|:-------:|:------:|:----:|
 | Required |         |        |      |
 
-#### Meter less than V4.0
+### Meter less than V4.0
 
 | Runtime  | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
@@ -38,7 +38,7 @@ To get the new meter:
 1. Verify that you are able to get output by running the following: `cat /proc/stat`
 2. If there is no output, then this plugin will not work.
 
-#### Plugin Configuration Fields
+### Plugin Configuration Fields
 |Field Name  |Description                                |
 |:-----------|:------------------------------------------|
 |Poll Seconds|How often should the plugin poll /proc/stat|
