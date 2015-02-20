@@ -3,7 +3,7 @@
   "icon" : "icon.png",
 
   "command" : "node index.js",
-  "command_lua" : "boundary-meter index.lua",
+  "command_lua" : "boundary-meter init.lua",
 
   "postExtract" : "npm install",
   "postExtract_lua" : "",
