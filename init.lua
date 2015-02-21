@@ -3,9 +3,9 @@
 
 -- Imports.
 local fs = require('fs')
-local io = require('io')
 local json = require('json')
 local math = require('math')
+local os    = require('os')
 local timer = require('timer')
 local uv = require('uv')
 
@@ -22,7 +22,7 @@ local _pollInterval =
 
 local _source =
 	(type(_parameters.source) == 'string' and _parameters.source:gsub('%s+', '') ~= '' and _parameters.source) or
-	 io.popen("uname -n"):read('*line')
+	 os.hostname()
 
 -- Back-trail.
 local _last_count, _last_timestamp
