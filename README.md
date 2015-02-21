@@ -6,7 +6,7 @@ Tracks the fork rate on your server by polling `/proc/stat`. On a busy productio
 
 | OS        | Linux | Windows | SmartOS | OS X |
 |:----------|:-----:|:-------:|:-------:|:----:|
-| Supported |   v   |         |         |      |
+| Supported | yes   | no      | no      | no   |
 
 - **OS**: Tested to work on **Debian-based Linux distributions** (although any Linux OS should work).
 - Requires access to "/proc/stat".
@@ -24,13 +24,13 @@ To get the new meter:
 
 | Runtime  | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |         |        |      |
+| Required | no      | no     | no   |
 
 ### Meter less than V4.0
 
 | Runtime  | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |    v    |        |      |
+| Required | yes     | no     | no   |
 
 - [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 
