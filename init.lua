@@ -58,7 +58,7 @@ end
 function fail(message)
   _last_count = nil
   _last_timestamp = nil
-  print(message or 'Error parsing "' .. PROC_STAT .. '"!')
+  process.stderr:write(message or 'Error parsing "' .. PROC_STAT .. '"!')
   schedule()
 end
 
